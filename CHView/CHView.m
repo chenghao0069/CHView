@@ -36,7 +36,8 @@
     bezelView.layer.cornerRadius = 5;
     [bezelView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(0);
-        make.size.equalTo(CGSizeMake(108, 90));
+        make.height.equalTo(90);
+        make.width.equalTo(108);
     }];
 }
 
