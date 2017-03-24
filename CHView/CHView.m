@@ -6,6 +6,9 @@
 //  Copyright © 2017年 Beijing Fitcare inc. All rights reserved.
 //
 
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
 #import "CHView.h"
 
 @implementation CHView
@@ -29,7 +32,10 @@
     bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     bezelView.clipsToBounds = YES;
     bezelView.layer.cornerRadius = 5;
-    bezelView.frame = CGRectMake(200, 200, 100, 100);
+    [bezelView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(0);
+        make.size.equalTo(CGSizeMake(108, 90));
+    }];
 }
 
 @end
