@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "CHView"
-  s.version      = "0.5.0"
+  s.version      = "0.6.0"
   s.summary      = "A Test View"
 
   s.description  = <<-DESC
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/chenghao0069/CHView.git", :tag => "0.5.0" }
+  s.source       = { :git => "https://github.com/chenghao0069/CHView.git", :tag => "0.6.0" }
 
   s.source_files  = "CHView", "CHView/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
